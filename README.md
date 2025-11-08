@@ -55,7 +55,7 @@ Below are the test scenarios captured during execution — showing that all core
 Jobs were successfully added to the queue and listed under the **Pending** state.
 
 🖼️
-![Job Enqueued Successfully](screenshots/enqueue.png)
+![Job Enqueued Successfully](https://github.com/purnachandu12/Flamapp/blob/main/Enqueue.png)
 
 ---
 
@@ -64,7 +64,7 @@ Jobs were successfully added to the queue and listed under the **Pending** state
 A worker picked up the job and executed it successfully. The job moved to the **Completed** state.
 
 🖼️
-![Worker Executing Job](screenshots/worker-assigned.png)
+![Worker Executing Job](https://github.com/purnachandu12/Flamapp/blob/main/workers%20assigned.png)
 
 ---
 
@@ -73,7 +73,7 @@ A worker picked up the job and executed it successfully. The job moved to the **
 A failed job automatically retried multiple times with exponential backoff and eventually moved to the **Dead Letter Queue** after max attempts.
 
 🖼️
-![Job Failed and Moved to DLQ](screenshots/failed-and-retry.png)
+![Job Failed and Moved to DLQ](https://github.com/purnachandu12/Flamapp/blob/main/failed%20and%20retry.png)
 
 ---
 
@@ -82,7 +82,7 @@ A failed job automatically retried multiple times with exponential backoff and e
 The failed job was visible in the **DLQ List**, showing proper state and metadata.
 
 🖼️
-![DLQ Listing](screenshots/dead-list.png)
+![DLQ Listing](https://github.com/purnachandu12/Flamapp/blob/main/dead%20list.png)
 
 ---
 
@@ -91,7 +91,7 @@ The failed job was visible in the **DLQ List**, showing proper state and metadat
 The job in DLQ was successfully retried and moved back to the **Pending** state for reprocessing.
 
 🖼️
-![DLQ Job Retried to Pending](screenshots/dead-queue-to-pending.png)
+![DLQ Job Retried to Pending](https://github.com/purnachandu12/Flamapp/blob/main/dead%20queue%20to%20pending.png)
 
 ---
 
@@ -100,7 +100,7 @@ The job in DLQ was successfully retried and moved back to the **Pending** state 
 Multiple jobs were processed simultaneously by different workers, demonstrating proper concurrency handling.
 
 🖼️
-![Multiple Jobs Processed](screenshots/multiple-jobs-running.png)
+![Multiple Jobs Processed](https://github.com/purnachandu12/Flamapp/blob/main/multiple%20jobs.png)
 
 ---
 
@@ -109,7 +109,7 @@ Multiple jobs were processed simultaneously by different workers, demonstrating 
 System configuration (e.g., `max-retries`) was successfully updated through CLI.
 
 🖼️
-![Config Updated](screenshots/set-max-tries.png)
+![Config Updated](https://github.com/purnachandu12/Flamapp/blob/main/set%20max%20tries.png)
 
 ---
 
@@ -118,7 +118,7 @@ System configuration (e.g., `max-retries`) was successfully updated through CLI.
 The system status summary showed total jobs with counts of completed, failed, and pending states, along with active worker details.
 
 🖼️
-![Status Summary](screenshots/status.png)
+![Status Summary](https://github.com/purnachandu12/Flamapp/blob/main/status.png)
 
 ---
 
